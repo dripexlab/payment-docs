@@ -1,5 +1,4 @@
 :root {
-  --ifm-font-family-base: 'Space Grotesk', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   --ifm-color-primary: #3A36DB;
   --ifm-color-primary-dark: #2E2BC8;
   --ifm-color-primary-light: #4A46E6;
@@ -7,19 +6,9 @@
   --ifm-font-color-base: #0D1025;
 }
 
-html, body {
-  font-family: var(--ifm-font-family-base);
-  background-color: var(--ifm-background-color);
-  color: var(--ifm-font-color-base);
-}
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 700;
-}
 
-a {
-  color: var(--ifm-color-primary);
-}
+
 
 .navbar {
   background-color: white;
