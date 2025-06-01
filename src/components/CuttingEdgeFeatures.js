@@ -1,5 +1,6 @@
 // File: src/components/CuttingEdgeFeatures.js
 import React from 'react';
+import Link from '@docusaurus/Link';
 import styles from './CuttingEdgeFeatures.module.css';
 
 export default function CuttingEdgeFeatures() {
@@ -23,15 +24,15 @@ export default function CuttingEdgeFeatures() {
       icon: '⚙️',
       title: 'Smart Workflow Automation',
       desc: 'Enhance efficiency with intelligent, automated workflows.',
-    }
+    },
   ];
 
   return (
     <section className={styles.featuresSection}>
       <p className={styles.sectionLabel}>Smarter Payment Solutions for Modern CRMs</p>
       <h2 className={styles.limitedWidth}>
-  Seamless payment integrations for GHL, Dripcel, Zoho, HubSpot with Payfast, Peach Payments & Paystack. 
-</h2>
+        Seamless payment integrations for GHL, Dripcel, Zoho, HubSpot with Payfast, Peach Payments & Paystack.
+      </h2>
       <div className={styles.featureGrid}>
         {features.map((item, index) => (
           <div key={index} className={styles.featureBox}>
@@ -42,10 +43,9 @@ export default function CuttingEdgeFeatures() {
         ))}
       </div>
       <div className={styles.featureButtonWrap}>
-      <a className={styles.featureCtaButton} href="mailto:accounts@dripexlab.com">
-  Contact Us
-</a>
-
+        <Link className={styles.featureCtaButton} to="/contact">
+          Contact Us
+        </Link>
       </div>
     </section>
   );

@@ -93,6 +93,11 @@ const config = {
             position: 'left',
             label: 'Docs',
           },
+          {
+      to: '/contact', // 👈 Link to the custom page
+      label: 'Contact',
+      position: 'left',
+    },
          // {to: '/blog', label: 'Blog', position: 'left'},
          
         ],

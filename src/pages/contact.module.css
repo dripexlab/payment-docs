@@ -1,0 +1,88 @@
+.contactPage {
+  padding: 6rem 2rem;
+ background: linear-gradient(180deg, #f5f8ff 0%, #ffffff 100%);
+  color: #d1d5db;
+  font-family: 'Inter', sans-serif;
+}
+
+.getInTouch {
+  color: #6b7280;
+  font-size: 0.875rem;
+  letter-spacing: 0.075em;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  color: #4b5563;
+  margin-bottom: 2rem;
+}
+
+.contactSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.contactDetails {
+  flex: 1 1 50%;
+}
+
+.contactImage {
+  flex: 1 1 40%;
+}
+
+.contactImage img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.infoBlock {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  color: #374151;
+}
+
+.icon {
+  font-size: 1.75rem;
+  margin-right: 1rem;
+}
+
+.label {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.text {
+  color: #4b5563;
+  margin: 0.25rem 0;
+}
+
+.link {
+  color: #6366f1;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.address {
+  color: #4b5563;
+}

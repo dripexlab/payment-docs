@@ -7,9 +7,9 @@ export default function CustomFooter() {
     <footer className={styles.footer}>
       <div className={styles.linksRow}>
         <div className={styles.linkItem}>
-  <a href="mailto:accounts@dripexlab.com">
-    <span role="img" aria-label="email">📧</span> Contact support
-  </a>
+  <Link to="/contact">
+  <span role="img" aria-label="email">📧</span> Contact support
+</Link>
 </div>
 
         <div className={styles.linkItem}>
