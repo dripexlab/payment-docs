@@ -16,7 +16,7 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero', styles.heroBanner)}>
       <div className={styles.heroContent}>
-        <p className={styles.heroLabel}>Custom Payments API Solution</p>
+        <p className={styles.heroLabel}>Custom Payments API Solutions</p>
         <h1 className={styles.heroTitle}>
           Powering What's Next
         </h1>

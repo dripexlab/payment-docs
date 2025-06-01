@@ -29,7 +29,8 @@ export default function CuttingEdgeFeatures() {
   return (
     <section className={styles.featuresSection}>
       <p className={styles.sectionLabel}>Smarter Payment Solutions for Modern CRMs</p>
-      <h2 className={styles.sectionHeading}>Seamless integrations for GHL, Dripcel, Zoho, HubSpot with Payfast, Peach Payments & Paystack - no hacks, no redirects, just clean payment flow.
+      <h2 className={styles.limitedWidth}>
+  Seamless payment integrations for GHL, Dripcel, Zoho, HubSpot with Payfast, Peach Payments & Paystack. 
 </h2>
       <div className={styles.featureGrid}>
         {features.map((item, index) => (
