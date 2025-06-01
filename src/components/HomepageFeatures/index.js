@@ -1,64 +1,60 @@
-import clsx from 'clsx';
-import Heading from '@theme/Heading';
+import React from 'react';
 import styles from './styles.module.css';
 
-const FeatureList = [
+export default function HomepageFeatures() {
+  const featuresTop = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
-    description: (
-      <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
-      </>
-    ),
+    icon: '🧩',
+    title: 'CRM-Integrated Payments',
+    description: 'Enable seamless, native payment collection inside CRMs like HighLevel, Zoho, and HubSpot—no plugins or redirects needed.',
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
-    description: (
-      <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
-      </>
-    ),
+    icon: '🌍',
+    title: 'Regional Payment Gateway Support',
+    description: 'Launch locally with full support for trusted gateways like Payfast (SA), Peach Payments, and Paystack (Africa/Nigeria).',
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
-      </>
-    ),
+    icon: '🛠️',
+    title: 'Custom Payment Flows',
+    description: 'Design unique workflows—from invoicing to split payments—fully integrated into your CRM’s logic engine and automation.',
+  },
+  {
+    icon: '💳',
+    title: 'Checkout, Links & Invoices',
+    description: 'Use our unified API to create branded checkouts, payment links, and CRM-native invoices that sync across systems.',
+  },
+  {
+    icon: '⚡',
+    title: 'Real-Time Transaction Sync',
+    description: 'Track successful payments, declines, and statuses across all CRMs with webhook-driven updates and automation triggers.',
+  },
+  {
+    icon: '🔒',
+    title: 'Secure by Design',
+    description: 'Built with PCI-DSS compliance, tokenization, and secure vaulting to meet the standards of global payment security.',
   },
 ];
 
-function Feature({Svg, title, description}) {
-  return (
-    <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
-      <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
-      </div>
-    </div>
-  );
-}
 
-export default function HomepageFeatures() {
+
+
   return (
-    <section className={styles.features}>
-      <div className="container">
-        <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
-          ))}
-        </div>
+    <section className={styles.featuresSection}>
+      <p className={styles.sectionLabel}>Cutting-Edge Technologies</p>
+      <h2 className={styles.sectionHeading}>
+        Shaping the Future of Digital Commerce
+      </h2>
+
+      <div className={styles.featureGrid}>
+        {featuresTop.map((item, index) => (
+          <div key={index} className={styles.featureBox}>
+            <div className={styles.featureIcon}>{item.icon}</div>
+            <h3 className={styles.featureTitle}>{item.title}</h3>
+            <p className={styles.featureDesc}>{item.description}</p>
+          </div>
+        ))}
       </div>
+
     </section>
   );
 }

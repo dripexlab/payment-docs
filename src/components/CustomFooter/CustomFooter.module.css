@@ -1,0 +1,26 @@
+.footer {
+  background-color: #020C3C; /* deep navy */
+  padding: 3rem 1rem 2rem;
+  color: #ffffff;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+}
+
+.linksRow {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  color: #E6ECF8;
+  font-size: 1.125rem;
+}
+
+.linkItem {
+  margin: 0.5rem 1rem;
+}
+
+.copy {
+  font-size: 0.875rem;
+  color: #c4d0f2;
+}
