@@ -73,3 +73,8 @@
 .featureCtaButton:hover {
   background: #4f46e5;
 }
+
+.limitedWidth {
+  max-width: 800px;
+  margin: 0 auto;
+}
