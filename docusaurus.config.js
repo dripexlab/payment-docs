@@ -83,7 +83,7 @@ const config = {
       navbar: {
         title: 'Home',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'Dripex Lab Logo',
           src: 'img/logo.svg',
         },
         items: [
