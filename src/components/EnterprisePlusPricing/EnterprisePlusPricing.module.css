@@ -157,3 +157,22 @@
   margin-top: 1.5rem;
 }
 
+.customSolutionBtn {
+  display: inline-block;
+  background-color: #6366f1; /* Violet 500 */
+  color: #fff;
+  padding: 0.75rem 2rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 12px;
+  transition: background-color 0.3s ease;
+  margin-top: 2rem;
+  box-shadow: 0 4px 14px rgba(99, 102, 241, 0.3); /* Optional */
+}
+
+.customSolutionBtn:hover {
+  background-color: #4f46e5; /* Violet 600 */
+}
+

@@ -86,3 +86,31 @@
 .address {
   color: #4b5563;
 }
+
+/* Default: side-by-side for desktop/tablet */
+.contact-wrapper {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+/* 🔽 Mobile layout: stack vertically */
+@media screen and (max-width: 768px) {
+  .contactSection {
+    flex-direction: column;
+  }
+
+  .contactDetails {
+    order: 1;
+  }
+
+  .contactImage {
+    order: 2;
+    margin-top: 1.5rem;
+  }
+
+  .contactImage img {
+    width: 100%;
+  }
+}
+

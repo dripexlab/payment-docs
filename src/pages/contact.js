@@ -17,7 +17,7 @@ export default function Contact() {
               <span className={styles.icon}>📧</span>
               <div>
                 <strong className={styles.label}>Email Assistance</strong>
-                <p className={styles.text}>Solutions tailored to your needs.</p>
+                <p className={styles.text}>Solutions tailored to your needs:</p>
                 <a href="mailto:support@dripexlab.com" className={styles.link}>support@dripexlab.com</a>
               </div>
             </div>
@@ -27,7 +27,7 @@ export default function Contact() {
               <div>
                 <strong className={styles.label}>Phone Support</strong>
                 <p className={styles.text}>Available weekdays, 8am – 5pm.</p>
-                <a href="tel:+15559876543" className={styles.link}>+1 (555) 987-6543</a>
+                <a href="tel:+17168995907" className={styles.link}>+1 716-899-5907</a>
               </div>
             </div>
 
@@ -35,8 +35,8 @@ export default function Contact() {
               <span className={styles.icon}>📍</span>
               <div>
                 <strong className={styles.label}>Office Location</strong>
-                <p className={styles.text}>Visit our main office.</p>
-                <p className={styles.address}>101 Web Lane, San Francisco, CA</p>
+                <p className={styles.text}>Office address:</p>
+                <p className={styles.address}>1908 Thomes Ave STE 12295 Cheyenne, WY 82001</p>
               </div>
             </div>
           </div>

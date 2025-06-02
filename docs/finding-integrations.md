@@ -12,6 +12,6 @@ This step-by-step guide will help you navigate the Dripcel App Marketplace to fi
 3. In the main menu, scroll through the list of app categories.
 4. Navigate to the **Payment Providers** section to find integration options like Payfast and Paystack.
 
-> ⚠️ Note: These integrations are available only at the **Agency Account** level and not at the **Subaccount** level.
+> ⚠️ Note: These integrations are available at the **Agency Account** and the **Subaccount** levels.
 
 By following these instructions, you’ll be able to locate and access the custom payment integrations offered within the Dripcel App Marketplace.

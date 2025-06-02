@@ -6,16 +6,106 @@
   --ifm-font-color-base: #0D1025;
 }
 
-
-
-
-
+/* Navbar */
 .navbar {
   background-color: white;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
+/* Active menu item in nav or sidebar */
 .menu__link--active {
   font-weight: 600;
   color: var(--ifm-color-primary);
+  background: none !important;
+}
+
+
+
+/* Fixed sidebar layout in Docs only */
+.docs-wrapper .theme-doc-sidebar-container {
+  position: fixed;
+  top: 80px;
+  left: 0;
+  width: 280px;
+  height: calc(100vh - 80px);
+  overflow-y: auto;
+  background-color: #f8faff;
+  z-index: 100;
+  border-right: none;
+}
+
+/* Shift main content to the right of sidebar */
+.docs-wrapper .main-wrapper {
+  margin-left: 280px;
+}
+
+/* Widen and center docs content to match screenshot styling */
+.docs-wrapper .theme-doc-main {
+  padding: 2rem 1.5rem;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Mobile reset for Docs only */
+@media screen and (max-width: 996px) {
+  .docs-wrapper .theme-doc-sidebar-container {
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+
+  .docs-wrapper .main-wrapper {
+    margin-left: 0;
+  }
+
+  .docs-wrapper .theme-doc-main {
+    margin-left: 0;
+    max-width: 100%;
+    padding: 1.5rem 1rem;
+  }
+}
+
+/* Sidebar links (default, hover, active) */
+.theme-doc-sidebar-menu .menu__link {
+  color: #111827;
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 0.5rem 1rem;
+  white-space: normal;
+  overflow: visible;
+  text-overflow: initial;
+  display: block;
+  max-width: 100%;
+  line-height: 1.5;
+  word-break: break-word;
+  background: none !important;
+}
+
+.theme-doc-sidebar-menu .menu__link:hover {
+  color: #3A36DB;
+}
+
+/* Prevent container from limiting layout */
+.docs-wrapper .main-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Widen and center docs content to match screenshot styling */
+.docs-wrapper .theme-doc-main {
+  padding: 2rem 1.5rem;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Only apply left padding to main doc content on large screens */
+@media screen and (min-width: 997px) {
+  .docs-wrapper .theme-doc-markdown {
+    padding-left: 6rem;
+  }
 }

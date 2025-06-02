@@ -1,6 +1,7 @@
 import React from 'react';
 import clsx from 'clsx';
 import styles from './EnterprisePlusPricing.module.css';
+import Link from '@docusaurus/Link';
 
 export default function EnterprisePlusPricing() {
   return (
@@ -30,12 +31,9 @@ export default function EnterprisePlusPricing() {
             <li>🔐 Secure by Design</li>
           </ul>
           <div className={styles.cta}>
-            <a
-  href="mailto:accounts@dripexlab.com"
-  className={clsx('button button--lg button--secondary')}
->
-  Custom Solution
-</a>
+ <Link to="/contact" className={styles.customSolutionBtn}>
+  Contact Sales
+</Link>
           </div>
         </div>
 
@@ -55,12 +53,9 @@ export default function EnterprisePlusPricing() {
             <li>🧩 Customizable Branding</li>
           </ul>
           <div className={styles.cta}>
-            <a
-  href="mailto:accounts@dripexlab.com"
-  className={clsx('button button--lg button--secondary')}
->
-  Custom Solution
-</a>
+ <Link to="/contact" className={styles.customSolutionBtn}>
+  Contact Sales
+</Link>
           </div>
         </div>
 
@@ -82,12 +77,9 @@ export default function EnterprisePlusPricing() {
             <li>🔒 Enterprise-Grade Security (PCI-compliant)</li>
           </ul>
           <div className={styles.cta}>
-            <a
-  href="mailto:accounts@dripexlab.com"
-  className={clsx('button button--lg button--secondary')}
->
-  Custom Solution
-</a>
+ <Link to="/contact" className={styles.customSolutionBtn}>
+  Contact Sales
+</Link>
           </div>
         </div>
       </div>
